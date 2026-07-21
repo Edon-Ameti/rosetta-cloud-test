@@ -1,0 +1,199 @@
+---
+safeMode: false
+tables:
+- name: "courses"
+  type: "BASE TABLE"
+  schema: "main"
+  columns:
+  - name: "course_id"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "title"
+    typeName: "VARCHAR"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 0
+    scale: 0
+    precision: 0
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "department"
+    typeName: "VARCHAR"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 0
+    scale: 0
+    precision: 0
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "credits"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+- name: "enrollments"
+  type: "BASE TABLE"
+  schema: "main"
+  columns:
+  - name: "enrollment_id"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "student_id"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "course_id"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "semester"
+    typeName: "VARCHAR"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 0
+    scale: 0
+    precision: 0
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+- name: "grades"
+  type: "BASE TABLE"
+  schema: "main"
+  columns:
+  - name: "grade_id"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "enrollment_id"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "grade"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "date_recorded"
+    typeName: "DATE"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 0
+    scale: 0
+    precision: 0
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+- name: "students"
+  type: "BASE TABLE"
+  schema: "main"
+  columns:
+  - name: "student_id"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "name"
+    typeName: "VARCHAR"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 0
+    scale: 0
+    precision: 0
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "major"
+    typeName: "VARCHAR"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 0
+    scale: 0
+    precision: 0
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "enrollment_year"
+    typeName: "INTEGER"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 32
+    scale: 0
+    precision: 32
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+views: []
+databaseProductName: "DuckDB"
+databaseType: "duckdb"
+operationLevel: "schema"

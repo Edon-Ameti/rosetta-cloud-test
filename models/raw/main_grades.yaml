@@ -1,0 +1,20 @@
+---
+version: 2
+sources:
+- name: main
+  description: duckdb
+  tables:
+  - name: grades
+    columns:
+    - name: grade_id
+      data_tests:
+      - not_null
+    - name: enrollment_id
+      data_tests:
+      - not_null
+    - name: grade
+      data_tests:
+      - not_null
+    - name: date_recorded
+      data_tests:
+      - not_null

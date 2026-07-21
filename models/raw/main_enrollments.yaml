@@ -1,0 +1,20 @@
+---
+version: 2
+sources:
+- name: main
+  description: duckdb
+  tables:
+  - name: enrollments
+    columns:
+    - name: enrollment_id
+      data_tests:
+      - not_null
+    - name: student_id
+      data_tests:
+      - not_null
+    - name: course_id
+      data_tests:
+      - not_null
+    - name: semester
+      data_tests:
+      - not_null

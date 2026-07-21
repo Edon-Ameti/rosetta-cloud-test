@@ -1,0 +1,55 @@
+[0m13:42:03.449436 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3CF6CC760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D0A183A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D0A18190>]}
+
+
+============================== 13:42:03.458778 | 0e747c7e-cc54-480b-a6e2-2b70129f4ddc ==============================
+[0m13:42:03.458778 [info ] [MainThread]: Running with dbt=1.11.11
+[0m13:42:03.459768 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Edon\\rosetta-dbt-studio-projects\\dbtstudio_getting_started', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Edon\\rosetta-dbt-studio-projects\\dbtstudio_getting_started\\logs'}
+[0m13:42:04.456026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e747c7e-cc54-480b-a6e2-2b70129f4ddc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D0A184C0>]}
+[0m13:42:04.564236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e747c7e-cc54-480b-a6e2-2b70129f4ddc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D011E170>]}
+[0m13:42:04.591624 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m13:42:05.410984 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m13:42:05.413020 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m13:42:05.414391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0e747c7e-cc54-480b-a6e2-2b70129f4ddc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D1C75390>]}
+[0m13:42:08.901441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0e747c7e-cc54-480b-a6e2-2b70129f4ddc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D1F60F70>]}
+[0m13:42:09.009401 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\manifest.json
+[0m13:42:09.036385 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\semantic_manifest.json
+[0m13:42:09.071328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0e747c7e-cc54-480b-a6e2-2b70129f4ddc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D1F8DB40>]}
+[0m13:42:09.072326 [info ] [MainThread]: Found 485 macros
+[0m13:42:09.073328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e747c7e-cc54-480b-a6e2-2b70129f4ddc', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D1F39210>]}
+[0m13:42:09.075328 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:42:09.076328 [debug] [MainThread]: Command end result
+[0m13:42:09.152045 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\manifest.json
+[0m13:42:09.159254 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\semantic_manifest.json
+[0m13:42:09.167258 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\run_results.json
+[0m13:42:09.169256 [debug] [MainThread]: Command `dbt run` succeeded at 13:42:09.169256 after 5.91 seconds
+[0m13:42:09.170256 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3CF6CC760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3CF970820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E3D011E170>]}
+[0m13:42:09.171257 [debug] [MainThread]: Flushing usage events
+[0m13:42:10.774519 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:42:19.886870 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943D1BC7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943E508430>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943E508250>]}
+
+
+============================== 13:42:19.893373 | f657a410-3fc0-4883-b41b-6ed70578d829 ==============================
+[0m13:42:19.893373 [info ] [MainThread]: Running with dbt=1.11.11
+[0m13:42:19.895585 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Edon\\rosetta-dbt-studio-projects\\dbtstudio_getting_started', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Edon\\rosetta-dbt-studio-projects\\dbtstudio_getting_started\\logs'}
+[0m13:42:20.406807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f657a410-3fc0-4883-b41b-6ed70578d829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943A2D1090>]}
+[0m13:42:20.534587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f657a410-3fc0-4883-b41b-6ed70578d829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943E4EB940>]}
+[0m13:42:20.539932 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m13:42:21.145761 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m13:42:21.446570 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m13:42:21.446570 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m13:42:21.446570 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m13:42:21.456751 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f657a410-3fc0-4883-b41b-6ed70578d829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943FB6D720>]}
+[0m13:42:21.555705 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\manifest.json
+[0m13:42:21.559722 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\semantic_manifest.json
+[0m13:42:21.610745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f657a410-3fc0-4883-b41b-6ed70578d829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943FB8A020>]}
+[0m13:42:21.610745 [info ] [MainThread]: Found 485 macros
+[0m13:42:21.610745 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f657a410-3fc0-4883-b41b-6ed70578d829', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943FB5FE80>]}
+[0m13:42:21.618887 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m13:42:21.622734 [debug] [MainThread]: Command end result
+[0m13:42:21.686009 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\manifest.json
+[0m13:42:21.686009 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\semantic_manifest.json
+[0m13:42:21.695998 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\run_results.json
+[0m13:42:21.695998 [debug] [MainThread]: Command `dbt test` succeeded at 13:42:21.695998 after 2.01 seconds
+[0m13:42:21.695998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943D1BC7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943AF29360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002943E3DB2B0>]}
+[0m13:42:21.703009 [debug] [MainThread]: Flushing usage events
+[0m13:42:22.245955 [debug] [MainThread]: An error was encountered while trying to flush usage events

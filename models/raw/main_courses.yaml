@@ -1,0 +1,20 @@
+---
+version: 2
+sources:
+- name: main
+  description: duckdb
+  tables:
+  - name: courses
+    columns:
+    - name: course_id
+      data_tests:
+      - not_null
+    - name: title
+      data_tests:
+      - not_null
+    - name: department
+      data_tests:
+      - not_null
+    - name: credits
+      data_tests:
+      - not_null
