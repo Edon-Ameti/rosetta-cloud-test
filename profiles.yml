@@ -2,8 +2,11 @@ dbtstudio_getting_started:
   target: dev
   outputs:
     dev:
-      type: duckdb
-      path: >-
-        C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\rosetta\university_sample.duckdb
-      schema: main
+      type: postgres
+      host: '{{ env_var("db-host-Test") }}'
+      port: '{{ env_var("db-port-Test") | int }}'
+      user: '{{ env_var("db-user-Test") }}'
+      password: '{{ env_var("db-password-Test") }}'
+      dbname: '{{ env_var("db-dbname-Test") }}'
+      schema: '{{ env_var("db-schema-Test") }}'
       threads: 4
