@@ -1,6 +1,6 @@
 {{
     config(
-        materialized='enrollment_id',
+        materialized='incremental',
         unique_key = ['enrollment_id'],
     )
 }}
@@ -15,7 +15,7 @@ with enrollments as (
 
 
 {% if is_incremental() %}
-where enrollment_year > (select max(enrollment_id) from {{ this }})
+where enrollment_id > (select max(enrollment_id) from {{ this }})
 {% endif %}
 )
 

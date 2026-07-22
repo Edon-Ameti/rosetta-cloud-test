@@ -15,7 +15,7 @@ with students as (
 
 
 {% if is_incremental() %}
-where INCREMENTAL_COLUMN > (select max(enrollment_year) from {{ this }})
+where enrollment_year > (select max(enrollment_year) from {{ this }})
 {% endif %}
 )
 

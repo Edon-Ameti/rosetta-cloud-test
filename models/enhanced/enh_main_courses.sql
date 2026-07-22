@@ -1,6 +1,6 @@
 {{
     config(
-        materialized='course_id',
+        materialized='incremental',
         unique_key = ['course_id'],
     )
 }}
@@ -15,7 +15,7 @@ with courses as (
 
 
 {% if is_incremental() %}
-where INCREMENTAL_COLUMN > (select max(course_id) from {{ this }})
+where course_id > (select max(course_id) from {{ this }})
 {% endif %}
 )
 

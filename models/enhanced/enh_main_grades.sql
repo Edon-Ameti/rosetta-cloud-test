@@ -1,6 +1,6 @@
 {{
     config(
-        materialized='date_recorded',
+        materialized='incremental',
         unique_key = ['grade_id'],
     )
 }}
@@ -15,7 +15,7 @@ with grades as (
 
 
 {% if is_incremental() %}
-where INCREMENTAL_COLUMN > (select max(date_recorded) from {{ this }})
+where date_recorded > (select max(date_recorded) from {{ this }})
 {% endif %}
 )
 
