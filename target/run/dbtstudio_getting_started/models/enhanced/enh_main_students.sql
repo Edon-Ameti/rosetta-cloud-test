@@ -1,28 +1,20 @@
 
-  
+        
+            delete from "university_sample"."main"."enh_main_students" as DBT_INCREMENTAL_TARGET
+            using "enh_main_students__dbt_tmp20260722110902228601"
+            where (
+                
+                    "enh_main_students__dbt_tmp20260722110902228601".student_id = DBT_INCREMENTAL_TARGET.student_id
+                    
+                
+                
+            );
+        
     
-    
 
-    create  table
-      "university_sample"."main"."enh_main_students"
-  
-    as (
-      
-
-with students as (
-	select
-		student_id,
-		name,
-		major,
-		enrollment_year
-	from "university_sample"."main"."main_students"
-
-
-
-)
-
-select * from students
-    );
-  
-  
+    insert into "university_sample"."main"."enh_main_students" ("student_id", "name", "major", "enrollment_year")
+    (
+        select "student_id", "name", "major", "enrollment_year"
+        from "enh_main_students__dbt_tmp20260722110902228601"
+    )
   

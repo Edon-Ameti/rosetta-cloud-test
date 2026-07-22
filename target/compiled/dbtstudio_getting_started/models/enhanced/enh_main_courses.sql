@@ -10,6 +10,8 @@ with courses as (
 
 
 
+where course_id > (select max(course_id) from "university_sample"."main"."enh_main_courses")
+
 )
 
 select * from courses

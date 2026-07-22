@@ -10,6 +10,8 @@ with enrollments as (
 
 
 
+where enrollment_id > (select max(enrollment_id) from "university_sample"."main"."enh_main_enrollments")
+
 )
 
 select * from enrollments

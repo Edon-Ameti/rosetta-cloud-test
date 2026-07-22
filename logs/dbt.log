@@ -3744,3 +3744,898 @@ select * from students
 [0m11:06:19.247566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1C27CC7F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1C04C4E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1C03530A0>]}
 [0m11:06:19.248566 [debug] [MainThread]: Flushing usage events
 [0m11:06:20.045322 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:08:58.882707 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33EAF0760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33FE38400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33FE38220>]}
+
+
+============================== 11:08:58.889153 | 9d61b260-4971-4227-b5d5-171ca4a7c1db ==============================
+[0m11:08:58.889153 [info ] [MainThread]: Running with dbt=1.11.11
+[0m11:08:58.891155 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Edon\\rosetta-dbt-studio-projects\\dbtstudio_getting_started', 'use_colors': 'True', 'invocation_command': 'dbt run', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Edon\\rosetta-dbt-studio-projects\\dbtstudio_getting_started\\logs'}
+[0m11:08:59.373974 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33FE384F0>]}
+[0m11:08:59.482594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33F53E170>]}
+[0m11:08:59.488203 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m11:09:00.057847 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m11:09:00.437878 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 4 files changed.
+[0m11:09:00.437878 [debug] [MainThread]: Partial parsing: updated file: dbtstudio_getting_started://models\enhanced\enh_main_students.sql
+[0m11:09:00.437878 [debug] [MainThread]: Partial parsing: updated file: dbtstudio_getting_started://models\enhanced\enh_main_enrollments.sql
+[0m11:09:00.437878 [debug] [MainThread]: Partial parsing: updated file: dbtstudio_getting_started://models\enhanced\enh_main_grades.sql
+[0m11:09:00.437878 [debug] [MainThread]: Partial parsing: updated file: dbtstudio_getting_started://models\enhanced\enh_main_courses.sql
+[0m11:09:01.015682 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3415CF2E0>]}
+[0m11:09:01.230295 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\manifest.json
+[0m11:09:01.230295 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\semantic_manifest.json
+[0m11:09:01.255322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C341740AC0>]}
+[0m11:09:01.255322 [info ] [MainThread]: Found 8 models, 16 data tests, 4 sources, 485 macros
+[0m11:09:01.260920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C341740430>]}
+[0m11:09:01.263366 [info ] [MainThread]: 
+[0m11:09:01.263366 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m11:09:01.263366 [info ] [MainThread]: 
+[0m11:09:01.263366 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m11:09:01.275981 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_university_sample'
+[0m11:09:01.447232 [debug] [ThreadPool]: Using duckdb connection "list_university_sample"
+[0m11:09:01.447232 [debug] [ThreadPool]: On list_university_sample: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "connection_name": "list_university_sample"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"university_sample"'
+    
+  
+  
+[0m11:09:01.447232 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:09:01.480732 [debug] [ThreadPool]: SQL status: OK in 0.039 seconds
+[0m11:09:01.490232 [debug] [ThreadPool]: On list_university_sample: Close
+[0m11:09:01.490232 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_university_sample, now create_university_sample_main)
+[0m11:09:01.493085 [debug] [ThreadPool]: Creating schema "database: "university_sample"
+schema: "main"
+"
+[0m11:09:01.504477 [debug] [ThreadPool]: Using duckdb connection "create_university_sample_main"
+[0m11:09:01.506243 [debug] [ThreadPool]: On create_university_sample_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "connection_name": "create_university_sample_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='university_sample'
+        and type='sqlite'
+    
+  
+[0m11:09:01.506243 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:09:01.506243 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m11:09:01.506243 [debug] [ThreadPool]: Using duckdb connection "create_university_sample_main"
+[0m11:09:01.506243 [debug] [ThreadPool]: On create_university_sample_main: BEGIN
+[0m11:09:01.512886 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:09:01.512886 [debug] [ThreadPool]: Using duckdb connection "create_university_sample_main"
+[0m11:09:01.514897 [debug] [ThreadPool]: On create_university_sample_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "connection_name": "create_university_sample_main"} */
+
+    
+    
+        create schema if not exists "university_sample"."main"
+    
+[0m11:09:01.514897 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:09:01.514897 [debug] [ThreadPool]: On create_university_sample_main: COMMIT
+[0m11:09:01.517971 [debug] [ThreadPool]: Using duckdb connection "create_university_sample_main"
+[0m11:09:01.517971 [debug] [ThreadPool]: On create_university_sample_main: COMMIT
+[0m11:09:01.520566 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m11:09:01.520566 [debug] [ThreadPool]: On create_university_sample_main: Close
+[0m11:09:01.523434 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_university_sample_main'
+[0m11:09:01.533318 [debug] [ThreadPool]: Using duckdb connection "list_university_sample_main"
+[0m11:09:01.533318 [debug] [ThreadPool]: On list_university_sample_main: BEGIN
+[0m11:09:01.535326 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:09:01.535326 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m11:09:01.537571 [debug] [ThreadPool]: Using duckdb connection "list_university_sample_main"
+[0m11:09:01.538679 [debug] [ThreadPool]: On list_university_sample_main: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "connection_name": "list_university_sample_main"} */
+select
+      'university_sample' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'university_sample'
+  
+[0m11:09:01.538679 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m11:09:01.547151 [debug] [ThreadPool]: On list_university_sample_main: ROLLBACK
+[0m11:09:01.547151 [debug] [ThreadPool]: Failed to rollback 'list_university_sample_main'
+[0m11:09:01.547151 [debug] [ThreadPool]: On list_university_sample_main: Close
+[0m11:09:01.547151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33BBB0070>]}
+[0m11:09:01.553473 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:09:01.555486 [debug] [MainThread]: On master: BEGIN
+[0m11:09:01.555486 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:09:01.557494 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:09:01.557494 [debug] [MainThread]: On master: COMMIT
+[0m11:09:01.557494 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:09:01.557494 [debug] [MainThread]: On master: COMMIT
+[0m11:09:01.557494 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:09:01.562754 [debug] [MainThread]: On master: Close
+[0m11:09:01.569381 [debug] [Thread-1 (]: Began running node model.dbtstudio_getting_started.main_courses
+[0m11:09:01.571561 [debug] [Thread-2 (]: Began running node model.dbtstudio_getting_started.main_enrollments
+[0m11:09:01.571561 [debug] [Thread-3 (]: Began running node model.dbtstudio_getting_started.main_grades
+[0m11:09:01.572737 [debug] [Thread-4 (]: Began running node model.dbtstudio_getting_started.main_students
+[0m11:09:01.572737 [info ] [Thread-1 (]: 1 of 8 START sql view model main.main_courses .................................. [RUN]
+[0m11:09:01.572737 [info ] [Thread-2 (]: 2 of 8 START sql view model main.main_enrollments .............................. [RUN]
+[0m11:09:01.576506 [info ] [Thread-3 (]: 3 of 8 START sql view model main.main_grades ................................... [RUN]
+[0m11:09:01.576506 [info ] [Thread-4 (]: 4 of 8 START sql view model main.main_students ................................. [RUN]
+[0m11:09:01.578519 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.dbtstudio_getting_started.main_courses'
+[0m11:09:01.578519 [debug] [Thread-2 (]: Acquiring new duckdb connection 'model.dbtstudio_getting_started.main_enrollments'
+[0m11:09:01.578519 [debug] [Thread-3 (]: Acquiring new duckdb connection 'model.dbtstudio_getting_started.main_grades'
+[0m11:09:01.578519 [debug] [Thread-4 (]: Acquiring new duckdb connection 'model.dbtstudio_getting_started.main_students'
+[0m11:09:01.578519 [debug] [Thread-1 (]: Began compiling node model.dbtstudio_getting_started.main_courses
+[0m11:09:01.578519 [debug] [Thread-2 (]: Began compiling node model.dbtstudio_getting_started.main_enrollments
+[0m11:09:01.585496 [debug] [Thread-3 (]: Began compiling node model.dbtstudio_getting_started.main_grades
+[0m11:09:01.585496 [debug] [Thread-4 (]: Began compiling node model.dbtstudio_getting_started.main_students
+[0m11:09:01.595733 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtstudio_getting_started.main_courses"
+[0m11:09:01.604075 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbtstudio_getting_started.main_enrollments"
+[0m11:09:01.605687 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbtstudio_getting_started.main_grades"
+[0m11:09:01.612402 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbtstudio_getting_started.main_students"
+[0m11:09:01.621134 [debug] [Thread-1 (]: Began executing node model.dbtstudio_getting_started.main_courses
+[0m11:09:01.622733 [debug] [Thread-2 (]: Began executing node model.dbtstudio_getting_started.main_enrollments
+[0m11:09:01.622733 [debug] [Thread-3 (]: Began executing node model.dbtstudio_getting_started.main_grades
+[0m11:09:01.686868 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbtstudio_getting_started.main_enrollments"
+[0m11:09:01.686868 [debug] [Thread-4 (]: Began executing node model.dbtstudio_getting_started.main_students
+[0m11:09:01.691804 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtstudio_getting_started.main_courses"
+[0m11:09:01.700299 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbtstudio_getting_started.main_grades"
+[0m11:09:01.702980 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.main_enrollments"
+[0m11:09:01.712423 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbtstudio_getting_started.main_students"
+[0m11:09:01.720255 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.main_courses"
+[0m11:09:01.727082 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.main_enrollments: BEGIN
+[0m11:09:01.727757 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.main_grades"
+[0m11:09:01.727757 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.main_courses: BEGIN
+[0m11:09:01.727757 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.main_students"
+[0m11:09:01.727757 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m11:09:01.727757 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.main_grades: BEGIN
+[0m11:09:01.732907 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m11:09:01.732907 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.main_students: BEGIN
+[0m11:09:01.736171 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m11:09:01.736171 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m11:09:01.736171 [debug] [Thread-1 (]: SQL status: OK in 0.006 seconds
+[0m11:09:01.736171 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m11:09:01.740126 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.main_enrollments"
+[0m11:09:01.741703 [debug] [Thread-3 (]: SQL status: OK in 0.004 seconds
+[0m11:09:01.741703 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.main_courses"
+[0m11:09:01.741703 [debug] [Thread-4 (]: SQL status: OK in 0.004 seconds
+[0m11:09:01.744615 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_enrollments"} */
+
+  
+  create view "university_sample"."main"."main_enrollments__dbt_tmp" as (
+    with enrollments as (
+	select
+		enrollment_id,
+		student_id,
+		course_id,
+		semester
+	from "university_sample"."main"."enrollments"
+)
+
+select * from enrollments
+  );
+
+[0m11:09:01.746224 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.main_grades"
+[0m11:09:01.747250 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_courses"} */
+
+  
+  create view "university_sample"."main"."main_courses__dbt_tmp" as (
+    with courses as (
+	select
+		course_id,
+		title,
+		department,
+		credits
+	from "university_sample"."main"."courses"
+)
+
+select * from courses
+  );
+
+[0m11:09:01.747250 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.main_students"
+[0m11:09:01.749260 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_grades"} */
+
+  
+  create view "university_sample"."main"."main_grades__dbt_tmp" as (
+    with grades as (
+	select
+		grade_id,
+		enrollment_id,
+		grade,
+		date_recorded
+	from "university_sample"."main"."grades"
+)
+
+select * from grades
+  );
+
+[0m11:09:01.749260 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m11:09:01.751730 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_students"} */
+
+  
+  create view "university_sample"."main"."main_students__dbt_tmp" as (
+    with students as (
+	select
+		student_id,
+		name,
+		major,
+		enrollment_year
+	from "university_sample"."main"."students"
+)
+
+select * from students
+  );
+
+[0m11:09:01.752740 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:09:01.764930 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.main_enrollments"
+[0m11:09:01.764930 [debug] [Thread-3 (]: SQL status: OK in 0.013 seconds
+[0m11:09:01.770817 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.main_courses"
+[0m11:09:01.770817 [debug] [Thread-4 (]: SQL status: OK in 0.008 seconds
+[0m11:09:01.770817 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_enrollments"} */
+alter view "university_sample"."main"."main_enrollments" rename to "main_enrollments__dbt_backup"
+[0m11:09:01.781494 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.main_grades"
+[0m11:09:01.781494 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_courses"} */
+alter view "university_sample"."main"."main_courses" rename to "main_courses__dbt_backup"
+[0m11:09:01.789027 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.main_students"
+[0m11:09:01.791404 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_grades"} */
+alter view "university_sample"."main"."main_grades" rename to "main_grades__dbt_backup"
+[0m11:09:01.791713 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m11:09:01.791713 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_students"} */
+alter view "university_sample"."main"."main_students" rename to "main_students__dbt_backup"
+[0m11:09:01.791713 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:09:01.796792 [debug] [Thread-3 (]: SQL status: OK in 0.002 seconds
+[0m11:09:01.799310 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.main_enrollments"
+[0m11:09:01.804651 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.main_courses"
+[0m11:09:01.804651 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m11:09:01.812889 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.main_grades"
+[0m11:09:01.812889 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_enrollments"} */
+alter view "university_sample"."main"."main_enrollments__dbt_tmp" rename to "main_enrollments"
+[0m11:09:01.812889 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_courses"} */
+alter view "university_sample"."main"."main_courses__dbt_tmp" rename to "main_courses"
+[0m11:09:01.821381 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.main_students"
+[0m11:09:01.821381 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_grades"} */
+alter view "university_sample"."main"."main_grades__dbt_tmp" rename to "main_grades"
+[0m11:09:01.823391 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m11:09:01.824811 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:09:01.824811 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_students"} */
+alter view "university_sample"."main"."main_students__dbt_tmp" rename to "main_students"
+[0m11:09:01.912801 [debug] [Thread-3 (]: SQL status: OK in 0.098 seconds
+[0m11:09:01.938149 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.main_enrollments: COMMIT
+[0m11:09:01.938149 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.main_courses: COMMIT
+[0m11:09:01.944491 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m11:09:01.946915 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.main_grades: COMMIT
+[0m11:09:01.946915 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.main_enrollments"
+[0m11:09:01.949803 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.main_courses"
+[0m11:09:01.951085 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.main_students: COMMIT
+[0m11:09:01.953094 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.main_grades"
+[0m11:09:01.954238 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.main_enrollments: COMMIT
+[0m11:09:01.955855 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.main_courses: COMMIT
+[0m11:09:01.955855 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.main_students"
+[0m11:09:01.955855 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.main_grades: COMMIT
+[0m11:09:01.957865 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.main_students: COMMIT
+[0m11:09:01.974239 [debug] [Thread-2 (]: SQL status: OK in 0.016 seconds
+[0m11:09:01.979328 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.main_enrollments"
+[0m11:09:01.979328 [debug] [Thread-3 (]: SQL status: OK in 0.025 seconds
+[0m11:09:01.979328 [debug] [Thread-1 (]: SQL status: OK in 0.027 seconds
+[0m11:09:01.986638 [debug] [Thread-4 (]: SQL status: OK in 0.026 seconds
+[0m11:09:01.986638 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_enrollments"} */
+
+      drop view if exists "university_sample"."main"."main_enrollments__dbt_backup" cascade
+    
+[0m11:09:01.991491 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.main_grades"
+[0m11:09:01.997576 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.main_courses"
+[0m11:09:02.000663 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.main_students"
+[0m11:09:02.004698 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_grades"} */
+
+      drop view if exists "university_sample"."main"."main_grades__dbt_backup" cascade
+    
+[0m11:09:02.006429 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_courses"} */
+
+      drop view if exists "university_sample"."main"."main_courses__dbt_backup" cascade
+    
+[0m11:09:02.006429 [debug] [Thread-2 (]: SQL status: OK in 0.003 seconds
+[0m11:09:02.006429 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.main_students"} */
+
+      drop view if exists "university_sample"."main"."main_students__dbt_backup" cascade
+    
+[0m11:09:02.011371 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.main_enrollments: Close
+[0m11:09:02.014818 [debug] [Thread-3 (]: SQL status: OK in 0.006 seconds
+[0m11:09:02.017866 [debug] [Thread-1 (]: SQL status: OK in 0.009 seconds
+[0m11:09:02.021218 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.main_grades: Close
+[0m11:09:02.021218 [debug] [Thread-4 (]: SQL status: OK in 0.007 seconds
+[0m11:09:02.024462 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.main_courses: Close
+[0m11:09:02.024462 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33BD877F0>]}
+[0m11:09:02.024462 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C341C34F70>]}
+[0m11:09:02.029473 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.main_students: Close
+[0m11:09:02.029473 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C341BE0E80>]}
+[0m11:09:02.029473 [info ] [Thread-2 (]: 2 of 8 OK created sql view model main.main_enrollments ......................... [[32mOK[0m in 0.44s]
+[0m11:09:02.029473 [info ] [Thread-3 (]: 3 of 8 OK created sql view model main.main_grades .............................. [[32mOK[0m in 0.45s]
+[0m11:09:02.036552 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C341C35E70>]}
+[0m11:09:02.036552 [info ] [Thread-1 (]: 1 of 8 OK created sql view model main.main_courses ............................. [[32mOK[0m in 0.45s]
+[0m11:09:02.040223 [debug] [Thread-2 (]: Finished running node model.dbtstudio_getting_started.main_enrollments
+[0m11:09:02.042236 [debug] [Thread-3 (]: Finished running node model.dbtstudio_getting_started.main_grades
+[0m11:09:02.042236 [info ] [Thread-4 (]: 4 of 8 OK created sql view model main.main_students ............................ [[32mOK[0m in 0.46s]
+[0m11:09:02.044784 [debug] [Thread-1 (]: Finished running node model.dbtstudio_getting_started.main_courses
+[0m11:09:02.046431 [debug] [Thread-2 (]: Began running node model.dbtstudio_getting_started.enh_main_enrollments
+[0m11:09:02.048445 [debug] [Thread-3 (]: Began running node model.dbtstudio_getting_started.enh_main_grades
+[0m11:09:02.050531 [debug] [Thread-4 (]: Finished running node model.dbtstudio_getting_started.main_students
+[0m11:09:02.052115 [debug] [Thread-1 (]: Began running node model.dbtstudio_getting_started.enh_main_courses
+[0m11:09:02.053022 [info ] [Thread-2 (]: 5 of 8 START sql incremental model main.enh_main_enrollments ................... [RUN]
+[0m11:09:02.054498 [info ] [Thread-3 (]: 6 of 8 START sql incremental model main.enh_main_grades ........................ [RUN]
+[0m11:09:02.056511 [debug] [Thread-4 (]: Began running node model.dbtstudio_getting_started.enh_main_students
+[0m11:09:02.056511 [info ] [Thread-1 (]: 7 of 8 START sql incremental model main.enh_main_courses ....................... [RUN]
+[0m11:09:02.058522 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.dbtstudio_getting_started.main_enrollments, now model.dbtstudio_getting_started.enh_main_enrollments)
+[0m11:09:02.058522 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.dbtstudio_getting_started.main_grades, now model.dbtstudio_getting_started.enh_main_grades)
+[0m11:09:02.060533 [info ] [Thread-4 (]: 8 of 8 START sql incremental model main.enh_main_students ...................... [RUN]
+[0m11:09:02.061417 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.dbtstudio_getting_started.main_courses, now model.dbtstudio_getting_started.enh_main_courses)
+[0m11:09:02.061417 [debug] [Thread-2 (]: Began compiling node model.dbtstudio_getting_started.enh_main_enrollments
+[0m11:09:02.061417 [debug] [Thread-3 (]: Began compiling node model.dbtstudio_getting_started.enh_main_grades
+[0m11:09:02.061417 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.dbtstudio_getting_started.main_students, now model.dbtstudio_getting_started.enh_main_students)
+[0m11:09:02.061417 [debug] [Thread-1 (]: Began compiling node model.dbtstudio_getting_started.enh_main_courses
+[0m11:09:02.075662 [debug] [Thread-2 (]: Writing injected SQL for node "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.087034 [debug] [Thread-3 (]: Writing injected SQL for node "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.087034 [debug] [Thread-4 (]: Began compiling node model.dbtstudio_getting_started.enh_main_students
+[0m11:09:02.097263 [debug] [Thread-1 (]: Writing injected SQL for node "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.099275 [debug] [Thread-2 (]: Began executing node model.dbtstudio_getting_started.enh_main_enrollments
+[0m11:09:02.104183 [debug] [Thread-4 (]: Writing injected SQL for node "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.104183 [debug] [Thread-3 (]: Began executing node model.dbtstudio_getting_started.enh_main_grades
+[0m11:09:02.128501 [debug] [Thread-1 (]: Began executing node model.dbtstudio_getting_started.enh_main_courses
+[0m11:09:02.204920 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.212558 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.220558 [debug] [Thread-4 (]: Began executing node model.dbtstudio_getting_started.enh_main_students
+[0m11:09:02.222352 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.228601 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_enrollments"} */
+
+    
+  
+    
+    
+
+    create temporary table
+      "enh_main_enrollments__dbt_tmp20260722110902171801"
+  
+    as (
+      
+
+with enrollments as (
+	select
+		enrollment_id,
+		student_id,
+		course_id,
+		semester
+	from "university_sample"."main"."main_enrollments"
+
+
+
+where enrollment_id > (select max(enrollment_id) from "university_sample"."main"."enh_main_enrollments")
+
+)
+
+select * from enrollments
+    );
+  
+  
+  
+[0m11:09:02.228601 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_grades"} */
+
+    
+  
+    
+    
+
+    create temporary table
+      "enh_main_grades__dbt_tmp20260722110902199709"
+  
+    as (
+      
+
+with grades as (
+	select
+		grade_id,
+		enrollment_id,
+		grade,
+		date_recorded
+	from "university_sample"."main"."main_grades"
+
+
+
+where date_recorded > (select max(date_recorded) from "university_sample"."main"."enh_main_grades")
+
+)
+
+select * from grades
+    );
+  
+  
+  
+[0m11:09:02.237998 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.242750 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_students"} */
+
+    
+  
+    
+    
+
+    create temporary table
+      "enh_main_students__dbt_tmp20260722110902228601"
+  
+    as (
+      
+
+with students as (
+	select
+		student_id,
+		name,
+		major,
+		enrollment_year
+	from "university_sample"."main"."main_students"
+
+
+
+where enrollment_year > (select max(enrollment_year) from "university_sample"."main"."enh_main_students")
+
+)
+
+select * from students
+    );
+  
+  
+  
+[0m11:09:02.237998 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_courses"} */
+
+    
+  
+    
+    
+
+    create temporary table
+      "enh_main_courses__dbt_tmp20260722110902222352"
+  
+    as (
+      
+
+with courses as (
+	select
+		course_id,
+		title,
+		department,
+		credits
+	from "university_sample"."main"."main_courses"
+
+
+
+where course_id > (select max(course_id) from "university_sample"."main"."enh_main_courses")
+
+)
+
+select * from courses
+    );
+  
+  
+  
+[0m11:09:02.245573 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:09:02.237998 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m11:09:02.242750 [debug] [Thread-4 (]: Opening a new connection, currently in state closed
+[0m11:09:02.241563 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m11:09:02.275229 [debug] [Thread-3 (]: SQL status: OK in 0.035 seconds
+[0m11:09:02.275229 [debug] [Thread-1 (]: SQL status: OK in 0.031 seconds
+[0m11:09:02.278912 [debug] [Thread-4 (]: SQL status: OK in 0.035 seconds
+[0m11:09:02.278912 [debug] [Thread-2 (]: SQL status: OK in 0.039 seconds
+[0m11:09:02.294136 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.297753 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.303858 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.312692 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.313694 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: BEGIN
+[0m11:09:02.315186 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: BEGIN
+[0m11:09:02.316185 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: BEGIN
+[0m11:09:02.317188 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: BEGIN
+[0m11:09:02.318184 [debug] [Thread-3 (]: SQL status: OK in 0.000 seconds
+[0m11:09:02.319193 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m11:09:02.321191 [debug] [Thread-4 (]: SQL status: OK in 0.000 seconds
+[0m11:09:02.322187 [debug] [Thread-2 (]: SQL status: OK in 0.000 seconds
+[0m11:09:02.323183 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.324183 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.324183 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.325183 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.326185 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_grades"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_grades__dbt_tmp20260722110902199709'
+      
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.327184 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_courses"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_courses__dbt_tmp20260722110902222352'
+      
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.328188 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_students"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_students__dbt_tmp20260722110902228601'
+      
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.330184 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_enrollments"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_enrollments__dbt_tmp20260722110902171801'
+      
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.361022 [debug] [Thread-1 (]: SQL status: OK in 0.029 seconds
+[0m11:09:02.362406 [debug] [Thread-2 (]: SQL status: OK in 0.029 seconds
+[0m11:09:02.362406 [debug] [Thread-4 (]: SQL status: OK in 0.031 seconds
+[0m11:09:02.362406 [debug] [Thread-3 (]: SQL status: OK in 0.033 seconds
+[0m11:09:02.376865 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.372867 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.382877 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.388899 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_enrollments"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_enrollments'
+      
+      and lower(table_schema) = 'main'
+      
+      
+      and lower(table_catalog) = 'university_sample'
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.391050 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.393033 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_courses"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_courses'
+      
+      and lower(table_schema) = 'main'
+      
+      
+      and lower(table_catalog) = 'university_sample'
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.394050 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_students"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_students'
+      
+      and lower(table_schema) = 'main'
+      
+      
+      and lower(table_catalog) = 'university_sample'
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.396033 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_grades"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_grades'
+      
+      and lower(table_schema) = 'main'
+      
+      
+      and lower(table_catalog) = 'university_sample'
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.400329 [debug] [Thread-2 (]: SQL status: OK in 0.006 seconds
+[0m11:09:02.401649 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m11:09:02.416603 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.417607 [debug] [Thread-3 (]: SQL status: OK in 0.020 seconds
+[0m11:09:02.418606 [debug] [Thread-4 (]: SQL status: OK in 0.021 seconds
+[0m11:09:02.426638 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.427652 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_enrollments"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_enrollments'
+      
+      and lower(table_schema) = 'main'
+      
+      
+      and lower(table_catalog) = 'university_sample'
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.433861 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.434862 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_courses"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_courses'
+      
+      and lower(table_schema) = 'main'
+      
+      
+      and lower(table_catalog) = 'university_sample'
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.441057 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.443057 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_grades"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_grades'
+      
+      and lower(table_schema) = 'main'
+      
+      
+      and lower(table_catalog) = 'university_sample'
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.444357 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_students"} */
+
+      select
+          column_name,
+          data_type,
+          character_maximum_length,
+          numeric_precision,
+          numeric_scale
+
+      from system.information_schema.columns
+      where table_name = 'enh_main_students'
+      
+      and lower(table_schema) = 'main'
+      
+      
+      and lower(table_catalog) = 'university_sample'
+      
+      order by ordinal_position
+
+  
+[0m11:09:02.447743 [debug] [Thread-2 (]: SQL status: OK in 0.005 seconds
+[0m11:09:02.448790 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m11:09:02.451876 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.452862 [debug] [Thread-4 (]: SQL status: OK in 0.006 seconds
+[0m11:09:02.453864 [debug] [Thread-3 (]: SQL status: OK in 0.007 seconds
+[0m11:09:02.456876 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_enrollments"} */
+SELECT version()
+[0m11:09:02.462111 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m11:09:02.493723 [debug] [Thread-1 (]: Writing runtime sql for node "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.496706 [debug] [Thread-4 (]: Writing runtime sql for node "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.497708 [debug] [Thread-2 (]: Writing runtime sql for node "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.499822 [debug] [Thread-3 (]: Writing runtime sql for node "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.501802 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.503914 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.504911 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_courses"} */
+
+        
+            delete from "university_sample"."main"."enh_main_courses" as DBT_INCREMENTAL_TARGET
+            using "enh_main_courses__dbt_tmp20260722110902222352"
+            where (
+                
+                    "enh_main_courses__dbt_tmp20260722110902222352".course_id = DBT_INCREMENTAL_TARGET.course_id
+                    
+                
+                
+            );
+        
+    
+
+    insert into "university_sample"."main"."enh_main_courses" ("course_id", "title", "department", "credits")
+    (
+        select "course_id", "title", "department", "credits"
+        from "enh_main_courses__dbt_tmp20260722110902222352"
+    )
+  
+[0m11:09:02.505912 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.506916 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_students"} */
+
+        
+            delete from "university_sample"."main"."enh_main_students" as DBT_INCREMENTAL_TARGET
+            using "enh_main_students__dbt_tmp20260722110902228601"
+            where (
+                
+                    "enh_main_students__dbt_tmp20260722110902228601".student_id = DBT_INCREMENTAL_TARGET.student_id
+                    
+                
+                
+            );
+        
+    
+
+    insert into "university_sample"."main"."enh_main_students" ("student_id", "name", "major", "enrollment_year")
+    (
+        select "student_id", "name", "major", "enrollment_year"
+        from "enh_main_students__dbt_tmp20260722110902228601"
+    )
+  
+[0m11:09:02.507913 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.508909 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_enrollments"} */
+
+        
+            delete from "university_sample"."main"."enh_main_enrollments" as DBT_INCREMENTAL_TARGET
+            using "enh_main_enrollments__dbt_tmp20260722110902171801"
+            where (
+                
+                    "enh_main_enrollments__dbt_tmp20260722110902171801".enrollment_id = DBT_INCREMENTAL_TARGET.enrollment_id
+                    
+                
+                
+            );
+        
+    
+
+    insert into "university_sample"."main"."enh_main_enrollments" ("enrollment_id", "student_id", "course_id", "semester")
+    (
+        select "enrollment_id", "student_id", "course_id", "semester"
+        from "enh_main_enrollments__dbt_tmp20260722110902171801"
+    )
+  
+[0m11:09:02.510351 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "dbtstudio_getting_started", "target_name": "dev", "node_id": "model.dbtstudio_getting_started.enh_main_grades"} */
+
+        
+            delete from "university_sample"."main"."enh_main_grades" as DBT_INCREMENTAL_TARGET
+            using "enh_main_grades__dbt_tmp20260722110902199709"
+            where (
+                
+                    "enh_main_grades__dbt_tmp20260722110902199709".grade_id = DBT_INCREMENTAL_TARGET.grade_id
+                    
+                
+                
+            );
+        
+    
+
+    insert into "university_sample"."main"."enh_main_grades" ("grade_id", "enrollment_id", "grade", "date_recorded")
+    (
+        select "grade_id", "enrollment_id", "grade", "date_recorded"
+        from "enh_main_grades__dbt_tmp20260722110902199709"
+    )
+  
+[0m11:09:02.526090 [debug] [Thread-1 (]: SQL status: OK in 0.018 seconds
+[0m11:09:02.527298 [debug] [Thread-3 (]: SQL status: OK in 0.014 seconds
+[0m11:09:02.528355 [debug] [Thread-2 (]: SQL status: OK in 0.016 seconds
+[0m11:09:02.529356 [debug] [Thread-4 (]: SQL status: OK in 0.019 seconds
+[0m11:09:02.531381 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: COMMIT
+[0m11:09:02.534352 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: COMMIT
+[0m11:09:02.537261 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: COMMIT
+[0m11:09:02.540279 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: COMMIT
+[0m11:09:02.541264 [debug] [Thread-1 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_courses"
+[0m11:09:02.542279 [debug] [Thread-3 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_grades"
+[0m11:09:02.543263 [debug] [Thread-2 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_enrollments"
+[0m11:09:02.544288 [debug] [Thread-4 (]: Using duckdb connection "model.dbtstudio_getting_started.enh_main_students"
+[0m11:09:02.546467 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: COMMIT
+[0m11:09:02.547471 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: COMMIT
+[0m11:09:02.547471 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: COMMIT
+[0m11:09:02.549237 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: COMMIT
+[0m11:09:02.550233 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m11:09:02.551477 [debug] [Thread-3 (]: SQL status: OK in 0.001 seconds
+[0m11:09:02.552495 [debug] [Thread-2 (]: SQL status: OK in 0.001 seconds
+[0m11:09:02.554863 [debug] [Thread-4 (]: SQL status: OK in 0.001 seconds
+[0m11:09:02.555846 [debug] [Thread-1 (]: On model.dbtstudio_getting_started.enh_main_courses: Close
+[0m11:09:02.557745 [debug] [Thread-3 (]: On model.dbtstudio_getting_started.enh_main_grades: Close
+[0m11:09:02.559417 [debug] [Thread-2 (]: On model.dbtstudio_getting_started.enh_main_enrollments: Close
+[0m11:09:02.561411 [debug] [Thread-4 (]: On model.dbtstudio_getting_started.enh_main_students: Close
+[0m11:09:02.562433 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C341D43880>]}
+[0m11:09:02.563727 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C341C34F70>]}
+[0m11:09:02.564763 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C341C74B80>]}
+[0m11:09:02.566767 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9d61b260-4971-4227-b5d5-171ca4a7c1db', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C3415205B0>]}
+[0m11:09:02.567767 [info ] [Thread-1 (]: 7 of 8 OK created sql incremental model main.enh_main_courses .................. [[32mOK[0m in 0.50s]
+[0m11:09:02.568750 [info ] [Thread-3 (]: 6 of 8 OK created sql incremental model main.enh_main_grades ................... [[32mOK[0m in 0.51s]
+[0m11:09:02.569968 [info ] [Thread-2 (]: 5 of 8 OK created sql incremental model main.enh_main_enrollments .............. [[32mOK[0m in 0.51s]
+[0m11:09:02.571383 [info ] [Thread-4 (]: 8 of 8 OK created sql incremental model main.enh_main_students ................. [[32mOK[0m in 0.50s]
+[0m11:09:02.573626 [debug] [Thread-1 (]: Finished running node model.dbtstudio_getting_started.enh_main_courses
+[0m11:09:02.574132 [debug] [Thread-3 (]: Finished running node model.dbtstudio_getting_started.enh_main_grades
+[0m11:09:02.575143 [debug] [Thread-2 (]: Finished running node model.dbtstudio_getting_started.enh_main_enrollments
+[0m11:09:02.576566 [debug] [Thread-4 (]: Finished running node model.dbtstudio_getting_started.enh_main_students
+[0m11:09:02.580427 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:09:02.581449 [debug] [MainThread]: On master: BEGIN
+[0m11:09:02.581449 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:09:02.583804 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m11:09:02.584832 [debug] [MainThread]: On master: COMMIT
+[0m11:09:02.584832 [debug] [MainThread]: Using duckdb connection "master"
+[0m11:09:02.585832 [debug] [MainThread]: On master: COMMIT
+[0m11:09:02.586866 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m11:09:02.588234 [debug] [MainThread]: On master: Close
+[0m11:09:02.589235 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:09:02.590233 [debug] [MainThread]: Connection 'create_university_sample_main' was properly closed.
+[0m11:09:02.590233 [debug] [MainThread]: Connection 'list_university_sample_main' was properly closed.
+[0m11:09:02.591234 [debug] [MainThread]: Connection 'model.dbtstudio_getting_started.enh_main_courses' was properly closed.
+[0m11:09:02.592234 [debug] [MainThread]: Connection 'model.dbtstudio_getting_started.enh_main_enrollments' was properly closed.
+[0m11:09:02.593236 [debug] [MainThread]: Connection 'model.dbtstudio_getting_started.enh_main_grades' was properly closed.
+[0m11:09:02.593236 [debug] [MainThread]: Connection 'model.dbtstudio_getting_started.enh_main_students' was properly closed.
+[0m11:09:02.594235 [info ] [MainThread]: 
+[0m11:09:02.595236 [info ] [MainThread]: Finished running 4 incremental models, 4 view models in 0 hours 0 minutes and 1.33 seconds (1.33s).
+[0m11:09:02.598233 [debug] [MainThread]: Command end result
+[0m11:09:02.654236 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\manifest.json
+[0m11:09:02.659234 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\semantic_manifest.json
+[0m11:09:02.670233 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Edon\rosetta-dbt-studio-projects\dbtstudio_getting_started\target\run_results.json
+[0m11:09:02.671234 [info ] [MainThread]: 
+[0m11:09:02.672235 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:09:02.673235 [info ] [MainThread]: 
+[0m11:09:02.674234 [info ] [MainThread]: Done. PASS=8 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=8
+[0m11:09:02.676234 [debug] [MainThread]: Command `dbt run` succeeded at 11:09:02.675248 after 3.96 seconds
+[0m11:09:02.677252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33EAF0760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33FE384F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C33F53E170>]}
+[0m11:09:02.678233 [debug] [MainThread]: Flushing usage events
+[0m11:09:03.645984 [debug] [MainThread]: An error was encountered while trying to flush usage events
