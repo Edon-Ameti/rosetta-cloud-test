@@ -10,8 +10,6 @@ with enrollments as (
 
 
 
-where INCREMENTAL_COLUMN > (select max(INCREMENTAL_COLUMN) from "university_sample"."main"."enh_main_enrollments")
-
 )
 
 select * from enrollments

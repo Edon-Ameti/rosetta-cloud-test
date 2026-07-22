@@ -15,7 +15,7 @@ with courses as (
 
 
 {% if is_incremental() %}
-where INCREMENTAL_COLUMN > (select max(INCREMENTAL_COLUMN) from {{ this }})
+where INCREMENTAL_COLUMN > (select max(course_id) from {{ this }})
 {% endif %}
 )
 

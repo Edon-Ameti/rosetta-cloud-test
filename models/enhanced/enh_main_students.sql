@@ -1,6 +1,6 @@
 {{
     config(
-        materialized='enrollment_year',
+        materialized='incremental',
         unique_key = ['student_id'],
     )
 }}
@@ -15,7 +15,7 @@ with students as (
 
 
 {% if is_incremental() %}
-where INCREMENTAL_COLUMN > (select max(INCREMENTAL_COLUMN) from {{ this }})
+where INCREMENTAL_COLUMN > (select max(enrollment_year) from {{ this }})
 {% endif %}
 )
 

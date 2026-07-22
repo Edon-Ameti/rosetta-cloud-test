@@ -10,8 +10,6 @@ with courses as (
 
 
 
-where INCREMENTAL_COLUMN > (select max(INCREMENTAL_COLUMN) from "university_sample"."main"."enh_main_courses")
-
 )
 
 select * from courses

@@ -15,7 +15,7 @@ with grades as (
 
 
 {% if is_incremental() %}
-where INCREMENTAL_COLUMN > (select max(INCREMENTAL_COLUMN) from {{ this }})
+where INCREMENTAL_COLUMN > (select max(date_recorded) from {{ this }})
 {% endif %}
 )
 

@@ -10,7 +10,7 @@ with students as (
 
 
 
-where INCREMENTAL_COLUMN > (select max(INCREMENTAL_COLUMN) from "university_sample"."main"."enh_main_students")
+where INCREMENTAL_COLUMN > (select max(enrollment_year) from "university_sample"."main"."enh_main_students")
 
 )
 
