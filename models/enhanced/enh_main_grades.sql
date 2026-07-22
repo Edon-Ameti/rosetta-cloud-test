@@ -1,7 +1,7 @@
 {{
     config(
-        materialized='incremental',
-        unique_key = ['UNIQUE_KEY_COLUMNS'],
+        materialized='date_recorded',
+        unique_key = ['grade_id'],
     )
 }}
 

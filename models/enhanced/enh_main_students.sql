@@ -1,7 +1,7 @@
 {{
     config(
-        materialized='incremental',
-        unique_key = ['UNIQUE_KEY_COLUMNS'],
+        materialized='enrollment_year',
+        unique_key = ['student_id'],
     )
 }}
 
